@@ -1,0 +1,15 @@
+.todo_card{
+    display: block;
+    background: #ffffff;
+    box-shadow: 2px 4px 20px 4px rgba(0,0,0,0.2);
+    padding: 10px 15px;
+    margin: 25px 1px;
+    border-radius: 10px;
+}
+.todo_card_title{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #302f2f;
+    margin-bottom: 20px;
+}

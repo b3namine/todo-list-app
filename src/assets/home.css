@@ -1,0 +1,16 @@
+.home_container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    margin: 25px 15px;
+    transition: all 600ms ease;
+}
+
+
+.my-masonry-grid {
+    display: flex;
+
+}
+.my-masonry-grid_column {
+    padding: 0 10px;
+}
