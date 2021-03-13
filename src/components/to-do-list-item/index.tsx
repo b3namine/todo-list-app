@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './index.css';
 import {ITodoListItem} from "../../pages/home";
+import {truncateText} from "../../services/core-functions";
 
 
 export const ToDoListItem: React.FC<{ item: ITodoListItem }> = ({item}) => {
@@ -12,15 +13,10 @@ export const ToDoListItem: React.FC<{ item: ITodoListItem }> = ({item}) => {
                defaultChecked={item.checked}
                onChange={(e) => {
                    setCheckStatus(e.currentTarget.checked)
-               }
-               }
+               }}
         />
         <label htmlFor={'item' + item.id}
                className={checkStatus ? 'todo-card_item-list_checked' : ''}>{truncateText(item.value, 45)}</label>
     </div>
 }
 
-
-function truncateText(string: string, num: number): string {
-    return string.length > num ? string.slice(0, num) + '...' : string;
-}
